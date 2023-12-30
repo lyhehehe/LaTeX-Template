@@ -1,0 +1,177 @@
+%!TEX program = xelatex
+\documentclass{YangBook}
+\usepackage{wrapfig}
+\usepackage{enumerate}
+\usepackage{amsmath,mathrsfs,amsfonts}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{colortbl}
+\usepackage{multirow,makecell}
+\usepackage{multicol}
+\usepackage{ulem} %\uline
+\usepackage{listings}
+\usepackage{tikz}
+\usepackage{tcolorbox}
+\usepackage{fontawesome}
+\usepackage[UTF8]{ctex}
+\usepackage{setspace}
+\usepackage[open,openlevel=0,atend]{bookmark}
+\usepackage{imakeidx}
+\usepackage{paracol}
+\makeindex[%
+  intoc=true,
+  columns=2,
+  columnsep=1cm,
+  columnseprule=true
+]
+
+
+\begin{document}
+
+%% title page
+\begin{titlepage}
+  \vspace*{25ex}
+
+  \hspace{-0.02\textwidth}\begin{minipage}{0.95\textwidth}
+    \flushleft
+
+    %%中文书名
+    {\zihao{1}\textbf{永磁电机电磁振动理论及应用}}
+
+    \rule{\linewidth}{.5pt}
+
+    \vspace{-1ex}
+
+    %% 英文书名
+    \setlength{\baselineskip}{30pt} 
+    {\zihao{2}\textsf{Theory and Application of Electromagnetic Vibration in Permanent Magnet Motors}} \\
+    \par
+    \vspace{20ex}
+
+    %% 作者
+    {\zihao{4}\textit{Yang Lu\\[-1ex]
+    		Huazhong University of Science and Technology\\
+    		\vspace{1ex}
+    		Jian Li\\[-2ex]
+    	    Huazhong University of Science and Technology}}
+  \end{minipage}
+
+  \vfill
+
+  \centering
+  {\zihao{4}武汉 ~$\bullet$ ~WUHAN}
+\end{titlepage}
+\thispagestyle{empty}
+
+
+\frontmatter
+
+
+\chapter{序}
+
+永磁电机电磁振动(Electromagnetic Vibration)。
+
+\chapter{前言}
+
+永磁电机电磁振动(Electromagnetic Vibration)。
+
+%% 目录
+\clearpage
+{
+  \hypersetup{hidelinks}
+  \tableofcontents
+}
+\mainmatter
+
+\part{电机电磁力}
+
+
+\chapter{核心知识}
+
+Angular 是一个。
+
+
+\section{第1节}
+
+\subsection{XXX}
+
+Angular 定义了 NgModule，它和 JavaScript（ES2015） 的模块不同而且有一定的互补性。 NgModule 为一个组件集声明了编译的上下文环境，它专注于某个应用领域、某个工作流或一组紧密相关的能力。 NgModule 可以将其组件和一组相关代码（如服务）关联起来，形成功能单元。
+
+\begin{lstlisting}[%
+  language=JavaScript,
+  caption={src/app/app.module.ts}
+]
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgModule } from '@angular/core';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
+import { NgZorroAntdModule, NZ_I18N, zh_CN } from 'ng-zorro-antd';
+// 配置 angular i18n
+import { registerLocaleData } from '@angular/common';
+import zh from '@angular/common/locales/zh';
+registerLocaleData(zh);
+
+@NgModule({
+  imports:      [ BrowserModule ],
+  providers:    [ Logger ],
+  declarations: [ AppComponent ],
+  exports:      [ AppComponent ],
+  bootstrap:    [ AppComponent ]
+})
+export class AppModule { }
+\end{lstlisting}
+
+\clearpage
+
+\section{XXX}
+
+\begin{textbox}{\faStickyNoteO\hspace{.5em}{\bfseries{\textsc{Note}}}}
+  JavaScript 中，每个文件
+\end{textbox}
+
+\begin{commentbox}
+	Full text of the referee's comment.
+\end{commentbox}
+
+对象。\footnote{JavaScript 模块可以使用import 语句来访问这些公共对象。}
+
+
+
+%\bookmarksetup{startatroot}
+
+
+%% 附录
+\appendix
+\cleardoublepage
+
+%% appendix chapter style
+\titleformat{\chapter}[display]
+{\bfseries}
+{\flushright\zihao{4}附录\thechapter}
+{1ex}
+{
+  \hrule width \hsize height .5pt
+  \vspace{-2ex}\flushright\zihao{2}
+}[\vspace{5ex}]
+
+
+\chapter{Angular CLI}
+
+
+
+\backmatter
+\cleardoublepage
+%% 索引
+\printindex
+
+%% 参考文献
+\bibliographystyle{plain}
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

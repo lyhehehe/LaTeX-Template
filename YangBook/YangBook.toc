@@ -1,0 +1,8 @@
+\contentsline {chapter}{序}{i}{chapter*.1}%
+\contentsline {chapter}{前言}{iii}{chapter*.2}%
+\contentsline {part}{第一部分\hspace {1em}电机电磁力}{1}{part.1}%
+\contentsline {chapter}{\numberline {第一章\hspace {.3em}}核心知识}{3}{chapter.1}%
+\contentsline {section}{\numberline {1.1}第1节}{3}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}XXX}{3}{subsection.1.1.1}%
+\contentsline {section}{\numberline {1.2}XXX}{4}{section.1.2}%
+\contentsline {chapter}{\numberline {附录 A\hspace {.3em}}Angular CLI}{5}{appendix.A}%

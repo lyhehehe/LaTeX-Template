@@ -1,0 +1,10 @@
+del *.log
+del *.synctex
+del *.bak
+del *.blg
+del *.sav
+del *.synctex.gz
+del *.aux
+del *.synctex.gz(busy)
+del *.out
+del *.bbl
